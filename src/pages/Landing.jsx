@@ -18,15 +18,20 @@ export default function Landing() {
 
       {/* ── Hero ── */}
       <section className="max-w-3xl mx-auto px-4 py-20 text-center">
-        {/* Tricolour decoration */}
-        <div className="flex justify-center gap-1 mb-8">
-          <span className="w-3 h-14 rounded bg-saffron-500" />
-          <span className="w-3 h-14 rounded bg-white border border-gray-200" />
-          <span className="w-3 h-14 rounded bg-india-green-500" />
+        {/* Official Logo */}
+        <div className="flex justify-center mb-6">
+          <div className="p-3 bg-white rounded-3xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+            <img
+              src="/logo.png"
+              alt="समाधान सेतु — SamadhanSetu Logo"
+              className="w-28 h-28 sm:w-32 sm:h-32 object-contain"
+            />
+          </div>
         </div>
 
-        <h1 className="text-5xl font-extrabold text-gray-900 mb-2">समाधान सेतु</h1>
-        <p className="text-xl text-gray-500 font-medium mb-3">SamadhanSetu</p>
+        <h1 className="text-5xl sm:text-6xl font-black text-[#74C476] mb-6 tracking-tight">
+          समाधान सेतु
+        </h1>
         <p className="text-base text-gray-500 max-w-xl mx-auto mb-10 leading-relaxed">
           Report local problems in your own language. AI prioritises every report,
           government reviewers verify it, and universities & industries step in to solve it.
@@ -95,8 +100,14 @@ export default function Landing() {
       </section>
 
       {/* ── Footer ── */}
-      <footer className="text-center py-8 text-xs text-gray-400">
-        Smart India Hackathon 2026 · Problem Statement 26043 · Government of Jharkhand
+      <footer className="text-center py-10 text-xs text-gray-500 border-t border-gray-200/80 bg-white">
+        <div className="flex items-center justify-center gap-2 mb-2">
+          <img src="/logo.png" alt="समाधान सेतु" className="w-6 h-6 object-contain" />
+          <span className="font-bold text-[#74C476] text-sm">समाधान सेतु</span>
+        </div>
+        <p className="text-gray-400">
+          Smart India Hackathon 2026 · Problem Statement 26043 · Government of Jharkhand
+        </p>
       </footer>
     </div>
   )

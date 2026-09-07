@@ -14,15 +14,14 @@ export default function Navbar() {
   return (
     <nav className="bg-white border-b border-gray-200 px-4 py-3 flex items-center justify-between">
       {/* Logo */}
-      <Link to="/" className="flex items-center gap-2">
-        {/* Mini tricolour */}
-        <span className="flex gap-0.5 items-center">
-          <span className="w-1.5 h-6 rounded-sm bg-saffron-500" />
-          <span className="w-1.5 h-6 rounded-sm bg-gray-100 border border-gray-200" />
-          <span className="w-1.5 h-6 rounded-sm bg-india-green-500" />
-        </span>
-        <span className="font-bold text-gray-800 text-lg tracking-tight">
-          SamadhanSetu
+      <Link to="/" className="flex items-center gap-3 group">
+        <img
+          src="/logo.png"
+          alt="SamadhanSetu Logo"
+          className="w-10 h-10 object-contain rounded-lg shadow-xs"
+        />
+        <span className="font-extrabold text-[#74C476] text-xl tracking-tight group-hover:text-[#74C476] transition-colors">
+          समाधान सेतु
         </span>
       </Link>
 

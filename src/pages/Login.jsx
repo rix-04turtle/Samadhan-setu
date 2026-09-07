@@ -46,8 +46,13 @@ export default function Login() {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4">
         <div className="bg-white rounded-2xl shadow-md p-10 max-w-sm w-full text-center">
-          <div className="text-5xl mb-4">📧</div>
-          <h2 className="text-xl font-bold text-gray-800 mb-2">Check your email</h2>
+          <img
+            src="/logo.png"
+            alt="समाधान सेतु"
+            className="w-16 h-16 object-contain mx-auto mb-3"
+          />
+          <h2 className="text-xl font-bold text-gray-800 mb-1">Check your email</h2>
+          <p className="text-xs font-semibold text-[#74C476] mb-3">समाधान सेतु</p>
           <p className="text-sm text-gray-500 leading-relaxed">
             We sent a magic sign-in link to{" "}
             <strong className="text-gray-700">{email}</strong>.
@@ -68,7 +73,16 @@ export default function Login() {
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4">
       <div className="bg-white rounded-2xl shadow-md p-10 max-w-sm w-full">
-        <h2 className="text-2xl font-bold text-gray-800 mb-1">Sign in</h2>
+        <div className="flex flex-col items-center mb-5 text-center">
+          <img
+            src="/logo.png"
+            alt="समाधान सेतु"
+            className="w-16 h-16 object-contain mb-2"
+          />
+          <h1 className="text-xl font-extrabold text-[#74C476]">समाधान सेतु</h1>
+        </div>
+
+        <h2 className="text-lg font-bold text-gray-800 mb-1">Sign in</h2>
         <p className="text-sm text-gray-500 mb-6">
           Enter your email — we will send you a one-click sign-in link.
           No password needed.

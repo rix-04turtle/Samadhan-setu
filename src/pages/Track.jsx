@@ -85,6 +85,16 @@ export default function Track() {
 
         {/* ── Confirmation banner ── */}
         <div className="bg-india-green-500 text-white rounded-2xl p-6 shadow">
+          <div className="flex items-center gap-2.5 mb-2.5">
+            <img
+              src="/logo.png"
+              alt="समाधान सेतु"
+              className="w-8 h-8 object-contain bg-white rounded-lg p-0.5 shadow-xs"
+            />
+            <span className="text-xs font-semibold text-[#74C476] tracking-wide bg-white/20 rounded-md px-2 py-0.5">
+              समाधान सेतु
+            </span>
+          </div>
           <p className="text-sm font-medium opacity-90 mb-1">✅ Report submitted successfully</p>
           <h2 className="text-xl font-bold mb-4">{problem.title}</h2>
 

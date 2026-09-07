@@ -110,10 +110,21 @@ export default function Submit() {
   return (
     <div className="min-h-screen bg-gray-50 py-10 px-4">
       <div className="max-w-2xl mx-auto">
-        <h1 className="text-2xl font-bold text-gray-900 mb-1">Report a Problem</h1>
-        <p className="text-sm text-gray-500 mb-6">
-          Fill in as much detail as you can. AI will help score and prioritise your report.
-        </p>
+        <div className="flex items-center gap-3.5 mb-6">
+          <img
+            src="/logo.png"
+            alt="समाधान सेतु"
+            className="w-12 h-12 object-contain bg-white p-1.5 rounded-2xl shadow-xs border border-gray-200"
+          />
+          <div>
+            <h1 className="text-2xl font-bold text-gray-900 leading-tight">
+              समस्या दर्ज करें · Report a Problem
+            </h1>
+            <p className="text-xs text-gray-500 mt-0.5">
+              <span className="text-[#74C476]">समाधान सेतु</span> — Fill in as much detail as you can. AI will help score and prioritise your report.
+            </p>
+          </div>
+        </div>
 
         <form onSubmit={handleSubmit} className="bg-white rounded-2xl shadow p-8 space-y-7">
 

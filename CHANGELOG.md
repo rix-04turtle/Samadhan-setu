@@ -14,6 +14,8 @@ Format: [PhaseN] — YYYY-MM-DD
 - Magic-link email authentication (no passwords)
 - Citizen submission form: title, description, category dropdown, photo upload, Leaflet map picker with geolocation
 - Supabase Storage upload for problem photos (`problem-media` bucket)
+- Official website logo integration across all pages, Navbar, and browser favicon
+- Preservation and prioritization of the Hindi name (समाधान सेतु) alongside English branding
 - Status tracking page (`/track/:id`) with 5-step status rail and photo evidence gallery
 - Automatic URL sanitization in `supabaseClient.js` ensuring robust connection even if path suffixes (e.g. `/rest/v1`) are included in `VITE_SUPABASE_URL`
 - Interactive photo evidence viewer with high-resolution links and explicit empty fallback state

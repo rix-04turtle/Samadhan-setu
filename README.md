@@ -1,14 +1,22 @@
-# समाधान सेतु — SamadhanSetu
+<p align="center">
+  <img src="public/logo.png" alt="समाधान सेतु — SamadhanSetu Logo" width="140" />
+</p>
 
-> **Empowering Citizens, Enabling Governance, Engaging Academia & Industry.**  
-> A civic problem-reporting and resolution platform tailored for Jharkhand — developed for **Smart India Hackathon 2026** (Problem Statement: **26043**).
+<h1 align="center">समाधान सेतु — SamadhanSetu</h1>
 
-[![React](https://img.shields.io/badge/React-18.2.0-61DAFB?logo=react&logoColor=black)](https://react.dev/)
-[![Vite](https://img.shields.io/badge/Vite-5.1.4-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4.1-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![Supabase](https://img.shields.io/badge/Supabase-Database%20%7C%20Auth%20%7C%20Storage-3ECF8E?logo=supabase&logoColor=white)](https://supabase.com/)
-[![Leaflet](https://img.shields.io/badge/Leaflet-1.9.4-199900?logo=leaflet&logoColor=white)](https://leafletjs.com/)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-pgvector-4169E1?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+<p align="center">
+  <strong>Empowering Citizens, Enabling Governance, Engaging Academia & Industry.</strong><br>
+  A civic problem-reporting and resolution platform tailored for Jharkhand — developed for <strong>Smart India Hackathon 2026</strong> (Problem Statement: <strong>26043</strong>).
+</p>
+
+<p align="center">
+  <a href="https://react.dev/"><img src="https://img.shields.io/badge/React-18.2.0-61DAFB?logo=react&logoColor=black" alt="React" /></a>
+  <a href="https://vitejs.dev/"><img src="https://img.shields.io/badge/Vite-5.1.4-646CFF?logo=vite&logoColor=white" alt="Vite" /></a>
+  <a href="https://tailwindcss.com/"><img src="https://img.shields.io/badge/Tailwind_CSS-3.4.1-38B2AC?logo=tailwind-css&logoColor=white" alt="Tailwind CSS" /></a>
+  <a href="https://supabase.com/"><img src="https://img.shields.io/badge/Supabase-Database%20%7C%20Auth%20%7C%20Storage-3ECF8E?logo=supabase&logoColor=white" alt="Supabase" /></a>
+  <a href="https://leafletjs.com/"><img src="https://img.shields.io/badge/Leaflet-1.9.4-199900?logo=leaflet&logoColor=white" alt="Leaflet" /></a>
+  <a href="https://www.postgresql.org/"><img src="https://img.shields.io/badge/PostgreSQL-pgvector-4169E1?logo=postgresql&logoColor=white" alt="PostgreSQL" /></a>
+</p>
 
 ---
 
