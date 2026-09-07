@@ -66,7 +66,9 @@ export default function Submit() {
         const { error: uploadError } = await supabase.storage
           .from("problem-media")
           .upload(path, photo)
-        if (uploadError) throw uploadError
+        if (uploadError) {
+          throw new Error(`Photo upload failed: ${uploadError.message}. (Did you apply storage RLS policies in Supabase SQL Editor?)`)
+        }
 
         const { data: { publicUrl } } = supabase.storage
           .from("problem-media")
@@ -90,7 +92,9 @@ export default function Submit() {
         .select("id")
         .single()
 
-      if (insertError) throw insertError
+      if (insertError) {
+        throw new Error(`Problem submission failed: ${insertError.message}`)
+      }
 
       // 3. Navigate to the tracking page
       navigate(`/track/${data.id}`)
