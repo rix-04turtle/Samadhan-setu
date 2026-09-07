@@ -132,24 +132,42 @@ export default function Track() {
           </div>
 
           {/* Photos */}
-          {problem.media && problem.media.length > 0 && (
-            <div>
-              <p className="text-xs text-gray-400 uppercase tracking-wide mb-2">
-                Attached photos
-              </p>
-              <div className="flex gap-2 flex-wrap">
-                {problem.media.map((url, i) => (
-                  <a key={i} href={url} target="_blank" rel="noopener noreferrer">
-                    <img
-                      src={url}
-                      alt={`Photo ${i + 1}`}
-                      className="w-20 h-20 object-cover rounded-lg border border-gray-200 hover:opacity-80 transition-opacity"
-                    />
-                  </a>
-                ))}
+          <div>
+            <p className="text-xs text-gray-400 uppercase tracking-wide mb-2">
+              Attached photos
+            </p>
+            {problem.media && problem.media.length > 0 ? (
+              <div className="space-y-2">
+                <div className="flex gap-3 flex-wrap">
+                  {problem.media.map((url, i) => (
+                    <a
+                      key={i}
+                      href={url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group relative block overflow-hidden rounded-xl border border-gray-200 shadow-sm hover:border-saffron-400 transition-colors"
+                    >
+                      <img
+                        src={url}
+                        alt={`Photo evidence ${i + 1}`}
+                        className="w-28 h-28 sm:w-36 sm:h-36 object-cover group-hover:scale-105 transition-transform duration-200"
+                      />
+                      <span className="absolute bottom-1.5 right-1.5 bg-black/70 text-white text-[10px] px-1.5 py-0.5 rounded backdrop-blur-sm font-medium">
+                        🔍 View full
+                      </span>
+                    </a>
+                  ))}
+                </div>
+                <p className="text-[11px] text-gray-400">
+                  Click on any photo to open the high-resolution original in a new tab.
+                </p>
               </div>
-            </div>
-          )}
+            ) : (
+              <p className="text-xs text-gray-400 italic bg-gray-50 p-2.5 rounded-lg border border-gray-100">
+                No photos were attached to this report.
+              </p>
+            )}
+          </div>
 
           {/* AI pending notice — replaced in Phase 2 with real scores */}
           <div className="bg-amber-50 border border-amber-200 rounded-xl p-3 text-xs text-amber-700 flex items-start gap-2">

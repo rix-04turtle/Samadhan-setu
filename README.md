@@ -59,7 +59,7 @@ In many regions across India, citizen grievances (such as broken rural roads, po
 - **Passwordless Magic-Link Authentication**: Frictionless email login with zero password management hassles.
 - **Rich Problem Reporting**: Form supporting issue titles, multi-paragraph descriptions, sector categorization, and photo evidence upload (up to 5 photos, max 10MB each).
 - **Geospatial Pin Placement**: Interactive Leaflet map centered on Jharkhand (`[23.6102, 85.2799]`) with high-accuracy browser geolocation detection.
-- **End-to-End Status Tracking**: Real-time status lookup (`/track/:problemId`) with copyable tracking IDs, category badges, and dynamic lifecycle progress rails.
+- **End-to-End Status Tracking**: Real-time status lookup (`/track/:problemId`) with copyable tracking IDs, category badges, dynamic 5-stage progress rail, and interactive photo evidence gallery with high-resolution preview.
 
 ### 🤖 2. AI Triage & Scoring Engine *(Phase 2+)*
 - **Multi-Factor Priority Scoring**: Automatically calculates:
@@ -365,7 +365,7 @@ Open your browser and navigate to **`http://localhost:5173`**.
 
 | Phase | Milestone | Deliverables | Status |
 |:---:|---|---|:---:|
-| **1** | **Citizen Portal (Text Reporting)** | Vite scaffold, magic-link auth, Leaflet map picker, photo uploads to Supabase Storage, problem submission, and `/track/:id` progress rail. | ✅ Complete |
+| **1** | **Citizen Portal (Text & Media Reporting)** | Vite scaffold, magic-link auth, Leaflet map picker, photo uploads to Supabase Storage, problem submission, and `/track/:id` progress rail with evidence viewer. | ✅ Complete & Verified |
 | **2** | **AI Triage & Prioritization** | Supabase Edge Function to analyze problem submissions and populate severity, urgency, and priority scores. | ⏳ Planned |
 | **3** | **Duplicate Detection & Community Upvotes** | `pgvector` semantic text embeddings to match near-identical local complaints and let citizens confirm them. | ⏳ Planned |
 | **4** | **Voice & Multilingual Reporting** | Bhashini voice recorder component supporting Indic regional dialects with audio transcription. | ⏳ Planned |

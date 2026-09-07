@@ -10,4 +10,13 @@ if (!supabaseUrl || !supabaseAnonKey) {
   )
 }
 
-export const supabase = createClient(supabaseUrl, supabaseAnonKey)
+// Ensure the URL is strictly the base origin (e.g. https://xyz.supabase.co),
+// stripping any accidental paths like /rest/v1 or trailing slashes
+let cleanUrl = supabaseUrl.trim()
+try {
+  cleanUrl = new URL(cleanUrl).origin
+} catch (e) {
+  // fallback if URL constructor fails
+}
+
+export const supabase = createClient(cleanUrl, supabaseAnonKey.trim())
